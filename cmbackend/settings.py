@@ -33,7 +33,7 @@ cloudinary.config(
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ('SECRET_KEY')
+SECRET_KEY = 'django-insecure-6)9p0t#(ilb+#wi27&%g6f@)rdo_a95!lye%0mt1cp)fcnbg1i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

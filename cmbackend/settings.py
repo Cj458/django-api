@@ -20,12 +20,12 @@ import django_heroku
 
 
 cloudinary.config(
-    cloud_name='calyjev',
-    api_key='292523133428383',
-    api_secret='5xLnMnM00e7dSg9d0_bOyH9ehs0'
-    # cloud_name = os.environ.get('CLOUD_NAME'),
-    # api_key= os.environ.get('CLOUD_API_KEY'),
-    # api_secret=os.environ.get('CLOUD_API_SECRET')
+    # cloud_name='calyjev',
+    # api_key='292523133428383',
+    # api_secret='5xLnMnM00e7dSg9d0_bOyH9ehs0'
+    cloud_name = os.environ.get('CLOUD_NAME'),
+    api_key= os.environ.get('CLOUD_API_KEY'),
+    api_secret=os.environ.get('CLOUD_API_SECRET')
 )
 
 
@@ -33,7 +33,7 @@ cloudinary.config(
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-6)9p0t#(ilb+#wi27&%g6f@)rdo_a95!lye%0mt1cp)fcnbg1i'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
